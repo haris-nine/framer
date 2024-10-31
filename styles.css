@@ -21,6 +21,12 @@ li {
 }
 
 
+a:focus {
+    outline:none !important;
+    box-shadow: none !important;
+}
+
+
 header {
     background: linear-gradient(153.93deg, #9CA0A3 6.26%, #959D9B 83.57%);
     height: 100svh;
