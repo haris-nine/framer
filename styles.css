@@ -21,9 +21,8 @@ li {
 }
 
 
-a:focus {
-    outline:none !important;
-    box-shadow: none !important;
+a::selection {
+    background-color: transparent;
 }
 
 
