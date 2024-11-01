@@ -9,12 +9,6 @@
     scrollbar-width: none;
 }
 
-html, body {
-    overflow-x: hidden;
-}
-body {
-    position: relative;
-}
 
 li {
     list-style: none;
@@ -163,6 +157,7 @@ button:hover {
     left: 0;
     top: 75svh;
     height: auto;
+    width: 100vw;
 }
 
 .sliding > .scroller__inner {
@@ -691,6 +686,16 @@ footer div {
 
 
 @media screen and (max-width: 1419px) {
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative;
+    }
+
+
     #side {
         display: none;
     }
@@ -755,6 +760,7 @@ footer div {
 
 
 
+
     .slidey img {
         height: 65svh;
     }
@@ -768,6 +774,7 @@ footer div {
     .sliding.scroller {
         bottom: auto;
         mask: linear-gradient(90deg, transparent, white 2%  );
+
     }
     .sliding p {
         font-size: 150px;
