@@ -21,11 +21,6 @@ li {
 }
 
 
-a::selection {
-    background-color: transparent;
-}
-
-
 header {
     background: linear-gradient(153.93deg, #9CA0A3 6.26%, #959D9B 83.57%);
     height: 100svh;
@@ -202,7 +197,7 @@ button:hover {
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
-    padding: 100px 205px;
+    padding: 100px 150px;
     width: 100%;
     z-index: 1;
     justify-content: center;
@@ -320,7 +315,7 @@ button:hover {
 }
 
 #featured-section, #brand-section {
-    padding: 0 125px;
+    padding: 0 65px;
 }
 
 
@@ -532,6 +527,7 @@ body > span {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    align-items: center;
 }
 
 #work-together button {
@@ -542,16 +538,13 @@ body > span {
     display: flex;
     align-items: center;
     gap: 10px;
+    height: min-content;
 }
 
 #work-together button:hover {
     background: rgba(103, 84, 226, 1);
     color: #fff;
 
-}
-
-#work-together button:last-child img {
-    width: 25px;
 }
 
 #work-together button:last-child:hover {
@@ -598,6 +591,33 @@ body > span {
     width: 110px;
 }
 
+#work-together button:last-child {
+    padding: 0;
+    padding-left: 39px;
+    gap: 20px;
+    box-shadow: 0px 11.4px 31.57px 0px #0000001A;
+}
+
+
+
+#contacty {
+    display: grid;
+    padding: 20px;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    box-shadow: 0px 11.4px 31.57px 0px #0000001A;
+    background-color: #6754e2;
+}
+
+#contacty svg {
+    width: 15px;
+    height: 15px;
+}
+
+#contacty svg path {
+    fill: #fff;
+}
+
 footer {
     background-color: rgb(37, 39, 40);
     padding: 80px 30px;
@@ -630,18 +650,23 @@ footer button {
     gap: 12px;
     display: flex;
     align-items: center;
-    pointer-events: none;
     padding: 14.2px 35.5px;
     font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
     font-weight: 400;
     font-size: 16px;
 }
 
-
-footer button:first-of-type {
-    background: rgba(103, 84, 226, 1);
+footer button:hover { 
     color: #fff;
 }
+
+
+footer button:hover svg path{ 
+    fill: #fff
+}
+
+
+
 
 footer div {
     display: flex;
